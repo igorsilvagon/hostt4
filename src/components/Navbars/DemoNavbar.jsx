@@ -54,18 +54,18 @@ class DemoNavbar extends React.Component {
             expand="lg"
             id="navbar-main"
           >
-              <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
-                <img
+             {/*  <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
+             <img
                   alt="..."
                   src={require("assets/img/brand/Branding-Hostt-Alternativo.png")}
-                />
-              </NavbarBrand>
+                /> 
+              </NavbarBrand> */}
               <button className="navbar-toggler" id="navbar_global">
                 <span className="navbar-toggler-icon" />
               </button>
               <UncontrolledCollapse navbar toggler="#navbar_global">
                 <div className="navbar-collapse-header">
-                  <Row>
+                 {/*  <Row>
                     <Col className="collapse-brand" xs="6">
                       <Link to="/">
                         <img
@@ -80,9 +80,9 @@ class DemoNavbar extends React.Component {
                         <span />
                       </button>
                     </Col>
-                  </Row>
+                  </Row> */}
                 </div>
-                <Nav className="navbar-nav-hover align-items-lg-center" navbar>
+                <Nav className="navbar-nav-hover" navbar>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <a className="nav-link-inner--text" href="#QuemSomos">Quem somos</a>
@@ -91,24 +91,24 @@ class DemoNavbar extends React.Component {
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
-                      <span className="nav-link-inner--text">Nossos serviços e como atuamos</span>
+                      <a className="nav-link-inner--text" href="#NossosServicos">Nossos serviços e como atuamos</a>
                     </DropdownToggle>
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
-                      <span className="nav-link-inner--text">Imóveis gerenciados pela Hostt</span>
-                    </DropdownToggle>
-
-                  </UncontrolledDropdown>
-                  <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
-                      <span className="nav-link-inner--text">Contato</span>
+                      <a className="nav-link-inner--text" href="#Imoveis">Imóveis gerenciados pela Hostt</a>
                     </DropdownToggle>
 
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
-                      <span className="nav-link-inner--text">Hostt na mídia</span>
+                      <a className="nav-link-inner--text" href="#Contato">Contato</a>
+                    </DropdownToggle>
+
+                  </UncontrolledDropdown>
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle nav>
+                      <span className="nav-link-inner--text" href="#Midia">Hostt na mídia</span>
                     </DropdownToggle>
 
                   </UncontrolledDropdown>

@@ -55,38 +55,43 @@ class Landing extends React.Component {
       <>
         <DemoNavbar />
         <main ref="main">
-        <div className="position-relative">
-            <section className=""><img className="background-1" width="100%" alt="Cidade de São Paulo" src={require("assets/img/theme/2.jpg")} />
-              <Container className="py-lg-md d-flex">
+        <div className="position-relative ">
+             <section className="">
+               <img className="background-1" width="100%" alt="Cidade de São Paulo" src={require("assets/img/theme/2.jpg")} /> 
+            {/*   <Container className="py-lg-md d-flex">
                 <div className="col px-0">
                   <Row>
                     <Col lg="6">
-                      <h1 className="display-3 text-grey">
-                        Título do projeto{" "}
-                        <span>Uma tagline bem bonita</span>
-                      </h1>
-                      <p className="lead text-white">
-                        Alguma descrição que possa ser usada para entender melhor a ideia, o que fazemos, 
-                        pra quem e o porquê fazemos. Sempre alinhado a direita.
-                      </p>
                       <div className="btn-wrapper">
                       </div>
                     </Col>
                   </Row>
                 </div>
-              </Container>
+              </Container> */}
             </section>
             </div>
          
           <section className="section bg-primary" id="QuemSomos">
             <Container>
-              <Row className="row-grid align-items-center">
-             
-              {/*    <Col lg="8 0ffset-2"> */}
+              <Row className="row-grid justify-content-lg-center">
+                <div className="text-white text-center">
+                  <h2 className="text-white">Quem somos</h2>
+                  <p >A Hostt surgiu em XXXX quando um dos nossos fundadores, um Superhost no Airbnb, percebeu
+que a demanda por aluguéis de curta temporada
+estava crescendo nas grandes cidades.
+Notamos que muitos proprietários tem interesse
+nesse tipo de locação , porém não possuem
+tempo para administrar.
+É aí que entramos com nosso trabalho,
+oferecendo serviços e estratégias diferenciadas
+que visam potencializar o rendimento dos bens.</p>
+                  </div>
+        
+              
                    <video controls>
                     <source src={require("assets/video/t_video4974277813369569446.mp4")} type="video/mp4"></source>
                   </video>
-              {/*     </Col> */}
+        
                 
                 </Row>
                 </Container>
@@ -94,50 +99,55 @@ class Landing extends React.Component {
 
              <section className="section" id="NossosServicos">
             <Container>
-              <Row className="text-center justify-content-center">
+              <Row className="text-center justify-content-md-center">
                 <Col lg="10">
                   <h2 className="display-3 text-gray">Nossos serviços e como atuamos</h2>
                 </Col>
               </Row>
-              <Row className="row-grid mt-5">
-                  <Col lg="4">
+              <Row className="row-grid mt-5 justify-content-md-center">
+                 <Col lg="4">
                   <div className="icon">
                     <img alt="1" src={require("assets/img/icons/common/icon-1.jpg")} width="220%"/>
                   </div> 
+                  <br></br><br></br>
                   <h5 className="text-center">Visita, fotografia, precificação e anúncio</h5>
                   </Col>
                   <Col lg="4">
-                  <div className="icon">
+                  <div className="icon justify-content-center">
                     <img alt="2" src={require("assets/img/icons/common/icon-2.jpg")} width="220%"/>
                   </div> 
+                  <br></br><br></br>
                   <h5 className="text-center">Respostas rápidas, negociação de reservas e envio de dados dos hóspedes à portaria</h5>
                   </Col>
                   <Col lg="4">
-                   <div className="icon">
+                   <div className="icon justify-content-center">
                     <img alt="3" src={require("assets/img/icons/common/icon-3.jpg")} width="220%"/>
                   </div> 
+                  <br></br><br></br>
                   <h5 className="text-center">Entrega de chaves, orientações gerais e acompanhamento da estadia</h5>
   
                   </Col>
                   <Col lg="4">
-                  <div className="icon">
+                  <div className="icon justify-content-center">
                     <img alt="4" src={require("assets/img/icons/common/icon-4.jpg")} width="220%"/>
                   </div>
+                  <br></br><br></br>
                   <h5 className="text-center">Vistorias, coordenação de serviços de limpeza e manutenção</h5>
                   </Col>
                   <Col lg="4">
-                  <div className="icon">
+                  <div className="icon justify-content-center">
                     <img alt="5" src={require("assets/img/icons/common/icon-5.jpg")} width="220%"/>
                   </div>
+                  <br></br><br></br>
                   <h5 className="text-center">Relatório mensal de ocupação e ganhos, feedbacks dos hóspedes e inventário de itens para compra</h5>
                   </Col>
               </Row>
             </Container>
           </section>
 
-             <section className="bg-secondary">
+             <section className="bg-secondary" id="Imoveis">
                 <Container>
-                  <Row className="justify-content-center">
+                  <Row className="justify-content-md-center">
                  <Col md="4">
                   <Card className="shadow border-0">
                     <CardImg
@@ -197,7 +207,7 @@ class Landing extends React.Component {
           </section>
         
 
-          <section>
+          <section id="Contato"> 
             <container>
               <row>
                 <Col lg="12">
