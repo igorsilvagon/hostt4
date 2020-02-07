@@ -57,7 +57,7 @@ class Landing extends React.Component {
         <main ref="main">
         <div className="position-relative ">
              <section className="">
-               <img className="background-1" width="100%" alt="Cidade de São Paulo" src={require("assets/img/theme/2.jpg")} /> 
+              <img className="background-1" width="100%" alt="Cidade de São Paulo" src={require("assets/img/theme/2.jpg")} /> 
             {/*   <Container className="py-lg-md d-flex">
                 <div className="col px-0">
                   <Row>
@@ -99,45 +99,55 @@ que visam potencializar o rendimento dos bens.</p>
 
              <section className="section" id="NossosServicos">
             <Container>
-              <Row className="text-center justify-content-md-center">
+              <Row className="text-center justify-content-center">
                 <Col lg="10">
                   <h2 className="display-3 text-gray">Nossos serviços e como atuamos</h2>
                 </Col>
               </Row>
-              <Row className="row-grid mt-5 justify-content-md-center">
+              <Row className="row-grid mt-5 justify-content-center ">
                  <Col lg="4">
+                 <Row className="row-grid justify-content-center">
                   <div className="icon">
-                    <img alt="1" src={require("assets/img/icons/common/icon-1.jpg")} width="220%"/>
+                    <img className="icon2" alt="1" src={require("assets/img/icons/common/icon-1.jpg")} width="220%"/>
                   </div> 
+                  </Row>
                   <br></br><br></br>
                   <h5 className="text-center">Visita, fotografia, precificação e anúncio</h5>
                   </Col>
                   <Col lg="4">
-                  <div className="icon justify-content-center">
-                    <img alt="2" src={require("assets/img/icons/common/icon-2.jpg")} width="220%"/>
+                  <Row className="row-grid justify-content-center">
+                  <div className="icon">
+                    <img className="icon2" alt="2" src={require("assets/img/icons/common/icon-2.jpg")} width="220%"/>
                   </div> 
+                  </Row>
                   <br></br><br></br>
                   <h5 className="text-center">Respostas rápidas, negociação de reservas e envio de dados dos hóspedes à portaria</h5>
                   </Col>
                   <Col lg="4">
-                   <div className="icon justify-content-center">
-                    <img alt="3" src={require("assets/img/icons/common/icon-3.jpg")} width="220%"/>
+                  <Row className="row-grid justify-content-center">
+                   <div className="icon">
+                    <img className="icon2" alt="3" src={require("assets/img/icons/common/icon-3.jpg")} width="220%"/>
                   </div> 
+                  </Row>
                   <br></br><br></br>
                   <h5 className="text-center">Entrega de chaves, orientações gerais e acompanhamento da estadia</h5>
   
                   </Col>
                   <Col lg="4">
-                  <div className="icon justify-content-center">
-                    <img alt="4" src={require("assets/img/icons/common/icon-4.jpg")} width="220%"/>
+                  <Row className="row-grid justify-content-center">
+                  <div className="icon">
+                    <img className="icon2" alt="4" src={require("assets/img/icons/common/icon-4.jpg")} width="220%"/>
                   </div>
+                  </Row>
                   <br></br><br></br>
                   <h5 className="text-center">Vistorias, coordenação de serviços de limpeza e manutenção</h5>
                   </Col>
                   <Col lg="4">
+                  <Row className="row-grid justify-content-center">
                   <div className="icon justify-content-center">
-                    <img alt="5" src={require("assets/img/icons/common/icon-5.jpg")} width="220%"/>
+                    <img className="icon2" alt="5" src={require("assets/img/icons/common/icon-5.jpg")} width="220%"/>
                   </div>
+                  </Row>
                   <br></br><br></br>
                   <h5 className="text-center">Relatório mensal de ocupação e ganhos, feedbacks dos hóspedes e inventário de itens para compra</h5>
                   </Col>
@@ -149,7 +159,7 @@ que visam potencializar o rendimento dos bens.</p>
                 <Container>
                   <Row className="justify-content-md-center">
                  <Col md="4">
-                  <Card className="shadow border-0">
+                  <Card className="shadow border-0 airbnb-card">
                     <CardImg
                       alt="..."
                       src={require("assets/img/theme/img-1-1200x1000.jpg")}
@@ -167,7 +177,7 @@ que visam potencializar o rendimento dos bens.</p>
                   </Card>
                 </Col>
                 <Col md="4">
-                  <Card className="shadow border-0">
+                  <Card className="shadow border-0 airbnb-card">
                     <CardImg
                       alt="..."
                       src={require("assets/img/theme/img-1-1200x1000.jpg")}
@@ -185,7 +195,7 @@ que visam potencializar o rendimento dos bens.</p>
                   </Card>
                 </Col>
                 <Col md="4">
-                  <Card className="shadow border-0">
+                  <Card className="shadow border-0 airbnb-card">
                     <CardImg
                       alt="..."
                       src={require("assets/img/theme/img-1-1200x1000.jpg")}
