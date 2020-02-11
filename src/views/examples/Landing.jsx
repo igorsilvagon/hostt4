@@ -40,6 +40,9 @@ import {
 import DemoNavbar from "components/Navbars/DemoNavbar.jsx";
 import SimpleFooter from "components/Footers/SimpleFooter.jsx";
 
+ // inner components
+ import AirbnbAd from './AirbnbAd';
+
 // index page sections
 /* import Download from "../IndexSections/Download.jsx"; */
 
@@ -158,8 +161,8 @@ que visam potencializar o rendimento dos bens.</p>
              <section className="bg-secondary" id="Imoveis">
                 <Container>
                   <Row className="justify-content-md-center">
-                 <Col md="4">
-                  <Card className="shadow border-0 airbnb-card">
+                 <Col lg="6">
+                  {/* <Card className="shadow border-0 airbnb-card">
                     <CardImg
                       alt="..."
                       src={require("assets/img/theme/img-1-1200x1000.jpg")}
@@ -210,8 +213,13 @@ que visam potencializar o rendimento dos bens.</p>
                       A descrição do Airbnb
                       </p>
                     </blockquote>
-                  </Card>
+                  </Card> */}
+                 
+                  <AirbnbAd code='21577485'/>
                 </Col> 
+                <Col lg="6"><AirbnbAd code='21577485'/>
+              </Col>
+              
               </Row>
             </Container>
           </section>
