@@ -43,6 +43,7 @@ import SimpleFooter from "components/Footers/SimpleFooter.jsx";
  // inner components
  import AirbnbAd from './AirbnbAd';
 
+
 // index page sections
 /* import Download from "../IndexSections/Download.jsx"; */
 
@@ -56,11 +57,19 @@ class Landing extends React.Component {
   render() {
     return (
       <>
+      
         <DemoNavbar />
         <main ref="main">
         <div className="position-relative ">
              <section className="">
-              <img className="background-1" width="100%" alt="Cidade de São Paulo" src={require("assets/img/theme/2.jpg")} /> 
+{/* 
+             <div class="carousel">
+    <a class="carousel-item" href="#one!"><img alt="Foto prédio" src={require("assets/img/theme/back_1.jpg")}/></a>
+    <a class="carousel-item" href="#two!"><img alt="Cidade de São Paulo" src={require("assets/img/theme/back_2.jpg")}/></a>
+    </div>  */}
+    
+          <img className="landing_section" width="100%" alt="Cidade de São Paulo" src={require("assets/img/theme/back_11.jpg")}  />
+
             {/*   <Container className="py-lg-md d-flex">
                 <div className="col px-0">
                   <Row>
@@ -74,11 +83,11 @@ class Landing extends React.Component {
             </section>
             </div>
          
-          <section className="section bg-primary" id="QuemSomos">
+          <section className="section bg-secondary" id="QuemSomos">
             <Container>
               <Row className="row-grid justify-content-lg-center">
-                <div className="text-white text-center">
-                  <h2 className="text-white">Quem somos</h2>
+                <div className="text-center">
+                  <h2>Quem somos</h2>
                   <p >A Hostt surgiu em XXXX quando um dos nossos fundadores, um Superhost no Airbnb, percebeu
 que a demanda por aluguéis de curta temporada
 estava crescendo nas grandes cidades.
@@ -154,6 +163,17 @@ que visam potencializar o rendimento dos bens.</p>
                   <br></br><br></br>
                   <h5 className="text-center">Relatório mensal de ocupação e ganhos, feedbacks dos hóspedes e inventário de itens para compra</h5>
                   </Col>
+                  
+                  <Col lg="4">
+                  <Row className="row-grid justify-content-center">
+                  <div className="icon justify-content-center">
+                    <img className="icon2" alt="5" src={require("assets/img/icons/common/icon-6.jpg")} width="220%"/>
+                  </div>
+                  </Row>
+                  <br></br><br></br>
+                  <h5 className="text-center">Mobiliário</h5>
+                  </Col>
+
               </Row>
             </Container>
           </section>
@@ -162,7 +182,23 @@ que visam potencializar o rendimento dos bens.</p>
                 <Container>
                   <Row className="justify-content-md-center">
                  <Col lg="6">
-                  {/* <Card className="shadow border-0 airbnb-card">
+                 
+                 
+                  <AirbnbAd code='21577485'/>
+                </Col> 
+                <Col lg="6"><AirbnbAd code='21577485'/>
+              </Col>
+              
+              </Row>
+            </Container>
+          </section>
+        
+
+          <section id="Contato"> 
+            <container>
+              <row>
+              <Col md="4">
+                  <Card className="shadow border-0 airbnb-card">
                     <CardImg
                       alt="..."
                       src={require("assets/img/theme/img-1-1200x1000.jpg")}
@@ -213,24 +249,8 @@ que visam potencializar o rendimento dos bens.</p>
                       A descrição do Airbnb
                       </p>
                     </blockquote>
-                  </Card> */}
-                 
-                  <AirbnbAd code='21577485'/>
-                </Col> 
-                <Col lg="6"><AirbnbAd code='21577485'/>
-              </Col>
-              
-              </Row>
-            </Container>
-          </section>
-        
-
-          <section id="Contato"> 
-            <container>
-              <row>
-                <Col lg="12">
-                <img alt="6" width="100%" src={require("assets/img/theme/1.jpg")}></img>
-                </Col>
+                  </Card> 
+                  </Col>
               </row>
             </container>
           </section>
