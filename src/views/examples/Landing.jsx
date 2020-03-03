@@ -141,7 +141,7 @@ class Landing extends React.Component {
                   </div>
                   </Row>
                   <br></br><br></br>
-                  <p className="text-center">Vistorias, coordenação de serviços de limpeza e manutenção</p>
+                  <p className="text-center">Vistorias, coordenação de serviços de limpeza, manutenção e lavagem de roupas de cama e banho</p>
                   </Col>
                   <Col lg="4">
                   <Row className="row-grid justify-content-center">
