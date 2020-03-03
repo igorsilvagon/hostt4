@@ -39,35 +39,14 @@ class SimpleFooter extends React.Component {
               <Col lg="6">
                 <h3 className=" text-primary font-weight-light mb-2">
                   Entre com contato conosco
-                </h3>
+                </h3><br></br>
                 <h4 className=" mb-0 font-weight-light">
                   hostt@hostt.com.br
                 </h4>
+                <br></br>
+                <h4 className=" mb-0 font-weight-light">(11) 9 9245-8043</h4>
               </Col>
-              <Col className=" text-lg-center btn-wrapper" lg="6">
-                <Button
-                  className=" btn-neutral btn-icon-only btn-round"
-                  color="twitter"
-                  href="https://twitter.com/creativetim"
-                  id="tooltip126536702"
-                  size="lg"
-                  target="_blank"
-                >
-                  <i className=" fa fa-twitter" />
-                </Button>
-                <UncontrolledTooltip delay={0} target="tooltip126536702">
-                  Follow us
-                </UncontrolledTooltip>
-                <Button
-                  className=" btn-neutral btn-icon-only btn-round ml-1"
-                  color="facebook"
-                  href="https://www.facebook.com/creativetim"
-                  id="tooltip383967593"
-                  size="lg"
-                  target="_blank"
-                >
-                  <i className=" fa fa-facebook-square" />
-                </Button>
+              
                {/*  <UncontrolledTooltip delay={0} target="tooltip383967593">
                   Like us
                 </UncontrolledTooltip>
@@ -97,7 +76,7 @@ class SimpleFooter extends React.Component {
                 <UncontrolledTooltip delay={0} target="tooltip626177562">
                   Star on Github
                 </UncontrolledTooltip> */}
-              </Col>
+            
             </Row>
             <hr />
             

@@ -91,7 +91,12 @@ class DemoNavbar extends React.Component {
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
-                      <a className="nav-link-inner--text" href="#NossosServicos">Nossos serviços e como atuamos</a>
+                      <a className="nav-link-inner--text" href="#NossosServicos">O que fazemos</a>
+                    </DropdownToggle>
+                  </UncontrolledDropdown>
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle nav>
+                      <a className="nav-link-inner--text" href="#NossosServicos">Serviços</a>
                     </DropdownToggle>
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav>

@@ -33,8 +33,11 @@ import {
   InputGroup, */
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
+
+import Carousel from 'react-bootstrap/Carousel';
+
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.jsx";
@@ -60,43 +63,29 @@ class Landing extends React.Component {
       
         <DemoNavbar />
         <main ref="main">
-        <div className="position-relative ">
+        <div className="position-relative">
              <section className="">
-{/* 
-             <div class="carousel">
-    <a class="carousel-item" href="#one!"><img alt="Foto prédio" src={require("assets/img/theme/back_1.jpg")}/></a>
-    <a class="carousel-item" href="#two!"><img alt="Cidade de São Paulo" src={require("assets/img/theme/back_2.jpg")}/></a>
-    </div>  */}
+             <Carousel>
+             <Carousel.Item>
     
-          <img className="landing_section" width="100%" alt="Cidade de São Paulo" src={require("assets/img/theme/back_11.jpg")}  />
+          <img className="landing_section" width="100%" height="auto" alt="Cidade de São Paulo" src={require("assets/img/theme/back_11.jpg")}  />
 
-            {/*   <Container className="py-lg-md d-flex">
-                <div className="col px-0">
-                  <Row>
-                    <Col lg="6">
-                      <div className="btn-wrapper">
-                      </div>
-                    </Col>
-                  </Row>
-                </div>
-              </Container> */}
+              </Carousel.Item>
+              <Carousel.Item>
+
+              <img className="landing_section" width="100%" height="auto" alt="Cidade de São Paulo" src={require("assets/img/theme/back_22_.png")}  />
+             
+              </Carousel.Item>
+              </Carousel>
             </section>
             </div>
          
-          <section className="section bg-secondary" id="QuemSomos">
+          <section className="section bg-second-1" id="QuemSomos">
             <Container>
               <Row className="row-grid justify-content-lg-center">
                 <div className="text-center">
-                  <h2>Quem somos</h2>
-                  <p >A Hostt surgiu em XXXX quando um dos nossos fundadores, um Superhost no Airbnb, percebeu
-que a demanda por aluguéis de curta temporada
-estava crescendo nas grandes cidades.
-Notamos que muitos proprietários tem interesse
-nesse tipo de locação , porém não possuem
-tempo para administrar.
-É aí que entramos com nosso trabalho,
-oferecendo serviços e estratégias diferenciadas
-que visam potencializar o rendimento dos bens.</p>
+                  <h2 className="font-weight-light">Quem somos</h2>
+                  <p >Somos anfitriões experientes que perceberam que o aluguel para curta temporada é uma forma atrativa de fazer um imóvel render mais. Plataformas como o Airbnb permitem gerenciar esse processo de forma simples e segura, mas receber bem vai além do que a plataforma oferece. É aí que nós entramos: cuidamos de tudo – do anúncio à limpeza, passando pela recepção dos hópedes – para que oferecer seu imóvel para locações de curta temporada seja como tem que ser: simples.</p>
                   </div>
         
               
@@ -109,11 +98,11 @@ que visam potencializar o rendimento dos bens.</p>
                 </Container>
              </section>
 
-             <section className="section" id="NossosServicos">
+             <section className="section bg-primar-1 white" id="NossosServicos">
             <Container>
               <Row className="text-center justify-content-center">
                 <Col lg="10">
-                  <h2 className="display-3 text-gray">Nossos serviços e como atuamos</h2>
+                  <h2 className="font-weight-light">O que fazemos</h2>
                 </Col>
               </Row>
               <Row className="row-grid mt-5 justify-content-center ">
@@ -124,7 +113,7 @@ que visam potencializar o rendimento dos bens.</p>
                   </div> 
                   </Row>
                   <br></br><br></br>
-                  <h5 className="text-center">Visita, fotografia, precificação e anúncio</h5>
+                  <p className="text-center">Visita, fotografia, precificação e anúncio</p>
                   </Col>
                   <Col lg="4">
                   <Row className="row-grid justify-content-center">
@@ -133,7 +122,7 @@ que visam potencializar o rendimento dos bens.</p>
                   </div> 
                   </Row>
                   <br></br><br></br>
-                  <h5 className="text-center">Respostas rápidas, negociação de reservas e envio de dados dos hóspedes à portaria</h5>
+                  <p className="text-center">Negociação de reservas</p>
                   </Col>
                   <Col lg="4">
                   <Row className="row-grid justify-content-center">
@@ -142,7 +131,7 @@ que visam potencializar o rendimento dos bens.</p>
                   </div> 
                   </Row>
                   <br></br><br></br>
-                  <h5 className="text-center">Entrega de chaves, orientações gerais e acompanhamento da estadia</h5>
+                  <p className="text-center">Liberação na portaria, entrega de chaves, orientações gerais e acompanhamento da estadia</p>
   
                   </Col>
                   <Col lg="4">
@@ -152,7 +141,7 @@ que visam potencializar o rendimento dos bens.</p>
                   </div>
                   </Row>
                   <br></br><br></br>
-                  <h5 className="text-center">Vistorias, coordenação de serviços de limpeza e manutenção</h5>
+                  <p className="text-center">Vistorias, coordenação de serviços de limpeza e manutenção</p>
                   </Col>
                   <Col lg="4">
                   <Row className="row-grid justify-content-center">
@@ -161,24 +150,50 @@ que visam potencializar o rendimento dos bens.</p>
                   </div>
                   </Row>
                   <br></br><br></br>
-                  <h5 className="text-center">Relatório mensal de ocupação e ganhos, feedbacks dos hóspedes e inventário de itens para compra</h5>
+                  <p className="text-center">Relatório mensal de ocupação, ganhos e comentários dos hóspedes</p>
                   </Col>
-                  
-                  <Col lg="4">
-                  <Row className="row-grid justify-content-center">
-                  <div className="icon justify-content-center">
-                    <img className="icon2" alt="5" src={require("assets/img/icons/common/icon-6.jpg")} width="220%"/>
-                  </div>
-                  </Row>
+                
+
+              </Row>
+            </Container>
+          </section>
+          
+          <section className="section bg-primar-1 white" id="NossosServicos">
+            <Container>
+              
+              <Row className="text-center justify-content-center">
+                <Col lg="10">
+                  <h2 className="font-weight-light">Serviços</h2>
+                </Col>
+              </Row>
+              <Row className="row-grid mt-5 justify-content-center ">
+                 <Col lg="8">
                   <br></br><br></br>
-                  <h5 className="text-center">Mobiliário</h5>
+                  <h5 className="text-center"><b>Gestão de imóveis na plataforma Airbnb</b></h5>
+                  <p className="text-center">Da criação do anúncio à limpeza do imóvel, passando pela comunicação com interessados e hóspedes até a entrega das chaves e acompanhamento da estadia, cuidamos de tudo que envolve disponibilizar seu apartamento na plataforma de locação</p>
+                  </Col>
+                  <Col lg="8">
+                  <br></br><br></br>
+                  <h5 className="text-center"><b>Mobília</b></h5>
+                  <p className="text-center">Tem um apartamento que não está mobiliado? Fale conosco – podemos mobilia-lo pra você</p>
+                  </Col>
+                  <Col lg="8">
+                  <br></br><br></br>
+                  <h5 className="text-center"><b>Avaliação de imóveis</b></h5>
+                  <p className="text-center">Na dúvida se o seu imóvel está pronto para fazer parte do catálogo da Hostt? Fazemos essa avaliação e oferecemos recomendações para deixar seu espaço mais atraente para usuários do Airbnb</p>
                   </Col>
 
               </Row>
             </Container>
           </section>
 
-             <section className="bg-secondary" id="Imoveis">
+
+             <section className="bg-second-1" id="Imoveis">
+             <Row className="text-center justify-content-center">
+                <Col lg="10">
+                  <h2 className="font-weight-light">Imóveis gerenciados pela Hostt</h2>
+                </Col>
+              </Row>
                 <Container>
                   <Row className="justify-content-md-center">
                  <Col lg="6">
@@ -194,65 +209,39 @@ que visam potencializar o rendimento dos bens.</p>
           </section>
         
 
-          <section id="Contato"> 
-            <container>
-              <row>
+          <section id="Mídia"> 
+            <Container>
+               
+              <Row className="text-center justify-content-center">
+                <Col lg="10">
+                  <h2 className="font-weight-light">Hostt na mídia</h2>
+                </Col>
+              </Row>
+
+              <Row className="justify-content-center">
               <Col md="4">
+              <a href="https://economia.estadao.com.br/blogs/radar-imobiliario/locacao-por-aplicativo-leva-condominios-a-se-ajustarem/">
                   <Card className="shadow border-0 airbnb-card">
                     <CardImg
                       alt="..."
-                      src={require("assets/img/theme/img-1-1200x1000.jpg")}
+                      src={require("assets/img/theme/reportagem_1.png")}
                       top
                     />
                     <blockquote className="card-blockquote">
                       
-                      <h4 className="font-weight-bold">
-                        Apartamento 1
+                      <h4 className="font-weight-light">
+                        Estadão
                       </h4>
                       <p className="text-italic">
-                        A descrição do Airbnb
+                      Locacao por aplicativo leva condominios a se ajustarem
                       </p>
                     </blockquote>
                   </Card>
+                  </a>
                 </Col>
-                <Col md="4">
-                  <Card className="shadow border-0 airbnb-card">
-                    <CardImg
-                      alt="..."
-                      src={require("assets/img/theme/img-1-1200x1000.jpg")}
-                      top
-                    />
-                    <blockquote className="card-blockquote">
-                      
-                      <h4 className="font-weight-bold">
-                        Apartamento 2
-                      </h4>
-                      <p className="text-italic">
-                      A descrição do Airbnb
-                      </p>
-                    </blockquote>
-                  </Card>
-                </Col>
-                <Col md="4">
-                  <Card className="shadow border-0 airbnb-card">
-                    <CardImg
-                      alt="..."
-                      src={require("assets/img/theme/img-1-1200x1000.jpg")}
-                      top
-                    />
-                    <blockquote className="card-blockquote">
-                      
-                      <h4 className="font-weight-bold">
-                        Apartamento 3
-                      </h4>
-                      <p className="text-italic">
-                      A descrição do Airbnb
-                      </p>
-                    </blockquote>
-                  </Card> 
-                  </Col>
-              </row>
-            </container>
+                
+              </Row>
+            </Container>
           </section>
 
          {/*  <section className="section section-lg">
