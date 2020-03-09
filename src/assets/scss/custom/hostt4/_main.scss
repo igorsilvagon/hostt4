@@ -21,3 +21,12 @@
     }
   }
 }
+
+.airbnb-ads {
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+  }
+}
