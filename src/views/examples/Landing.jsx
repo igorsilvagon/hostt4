@@ -44,8 +44,8 @@ import { Carousel } from 'views/examples/Carousel.jsx';
 import DemoNavbar from "components/Navbars/DemoNavbar.jsx";
 import SimpleFooter from "components/Footers/SimpleFooter.jsx";
 
- // inner components
- import AirbnbAd from './AirbnbAd';
+// inner components
+import { AirbnbAds } from './AirbnbAds';
 
 
 // index page sections
@@ -188,16 +188,7 @@ class Landing extends React.Component {
               </Col>
             </Row>
             <Container>
-              <Row className="justify-content-md-center">
-                <Col lg="4">
-
-
-                  <AirbnbAd code='21577485'/>
-                </Col>
-                <Col lg="4"><AirbnbAd code='21577485'/>
-                </Col>
-
-              </Row>
+              <AirbnbAds codes={['21577485', '21577485', '21577485']}/>
             </Container>
           </section>
 
