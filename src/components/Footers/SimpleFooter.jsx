@@ -33,7 +33,7 @@ class SimpleFooter extends React.Component {
   render() {
     return (
       <>
-        <footer className=" footer">
+        <footer className=" footer" id="Contato">
           <Container>
             <Row className=" row-grid align-items-center mb-5">
               <Col lg="6">
@@ -46,7 +46,7 @@ class SimpleFooter extends React.Component {
                 <br></br>
                 <h4 className=" mb-0 font-weight-light">(11) 9 9245-8043</h4>
               </Col>
-              
+
                {/*  <UncontrolledTooltip delay={0} target="tooltip383967593">
                   Like us
                 </UncontrolledTooltip>
@@ -76,10 +76,10 @@ class SimpleFooter extends React.Component {
                 <UncontrolledTooltip delay={0} target="tooltip626177562">
                   Star on Github
                 </UncontrolledTooltip> */}
-            
+
             </Row>
             <hr />
-            
+
           </Container>
         </footer>
       </>

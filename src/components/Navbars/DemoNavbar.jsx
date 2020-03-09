@@ -38,6 +38,8 @@ import {
   // UncontrolledTooltip
 } from "reactstrap";
 
+import { SmoothScrollLink } from './SmoothScrollLink.jsx';
+
 class DemoNavbar extends React.Component {
   componentDidMount() {
     let headroom = new Headroom(document.getElementById("navbar-main"));
@@ -57,7 +59,7 @@ class DemoNavbar extends React.Component {
              <img
                   alt="..."
                   src={require("assets/img/brand/Branding-Hostt-Alternativo.png")}
-                /> 
+                />
               </NavbarBrand> */}
               <button className="navbar-toggler" id="navbar_global">
                 <span className="navbar-toggler-icon" />
@@ -84,40 +86,38 @@ class DemoNavbar extends React.Component {
                 <Nav className="navbar-nav-hover" navbar>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
-                      <a className="nav-link-inner--text" href="#QuemSomos">Quem somos</a>
+                      <SmoothScrollLink to="QuemSomos">Quem somos</SmoothScrollLink>
+                    </DropdownToggle>
+                  </UncontrolledDropdown>
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle nav>
+                      <SmoothScrollLink to="OQueFazemos">O que fazemos</SmoothScrollLink>
+                    </DropdownToggle>
+                  </UncontrolledDropdown>
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle nav>
+                      <SmoothScrollLink to="NossosServicos">Serviços</SmoothScrollLink>
+                    </DropdownToggle>
+                  </UncontrolledDropdown>
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle nav>
+                      <SmoothScrollLink to="Imoveis">Imóveis gerenciados pela Hostt</SmoothScrollLink>
+                    </DropdownToggle>
+                  </UncontrolledDropdown>
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle nav>
+                      <SmoothScrollLink to="Contato">Contato</SmoothScrollLink>
                     </DropdownToggle>
 
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
-                      <a className="nav-link-inner--text" href="#NossosServicos">O que fazemos</a>
-                    </DropdownToggle>
-                  </UncontrolledDropdown>
-                  <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
-                      <a className="nav-link-inner--text" href="#NossosServicos">Serviços</a>
-                    </DropdownToggle>
-                  </UncontrolledDropdown>
-                  <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
-                      <a className="nav-link-inner--text" href="#Imoveis">Imóveis gerenciados pela Hostt</a>
-                    </DropdownToggle>
-
-                  </UncontrolledDropdown>
-                  <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
-                      <a className="nav-link-inner--text" href="#Contato">Contato</a>
-                    </DropdownToggle>
-
-                  </UncontrolledDropdown>
-                  <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
-                      <span className="nav-link-inner--text" href="#Midia">Hostt na mídia</span>
+                      <SmoothScrollLink to="Midia">Hostt na mídia</SmoothScrollLink>
                     </DropdownToggle>
 
                   </UncontrolledDropdown>
                 </Nav>
-                
+
                 {/* <Nav className="align-items-lg-center ml-lg-auto" navbar>
                   <NavItem>
                     <NavLink

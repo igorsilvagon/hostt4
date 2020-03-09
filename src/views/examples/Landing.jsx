@@ -73,7 +73,7 @@ class Landing extends React.Component {
             </Carousel>
           </div>
 
-          <section className="section bg-second-1" id="/QuemSomos">
+          <section className="section bg-second-1" id="QuemSomos">
             <Container>
               <Row className="row-grid justify-content-lg-center">
                 <div className="text-center">
@@ -91,7 +91,7 @@ class Landing extends React.Component {
             </Container>
           </section>
 
-          <section className="section bg-primar-1 white" id="NossosServicos">
+          <section className="section bg-primar-1 white" id="OQueFazemos">
             <Container>
               <Row className="text-center justify-content-center">
                 <Col lg="10">
@@ -237,7 +237,7 @@ class Landing extends React.Component {
           </section>
 
 
-          <section id="Mídia">
+          <section id="Midia">
 
             <Row className="text-center justify-content-center">
               <Col lg="10"><br></br>
