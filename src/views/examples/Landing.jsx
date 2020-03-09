@@ -16,6 +16,7 @@
 
 */
 import React from "react";
+
 // nodejs library that concatenates classes
 /* import classnames from "classnames"; */
 
@@ -36,7 +37,6 @@ import {
   Col,
 } from "reactstrap";
 
-import Carousel from 'react-bootstrap/Carousel';
 
 
 // core components
@@ -65,22 +65,15 @@ class Landing extends React.Component {
         <main ref="main">
         <div className="position-relative">
              <section className="">
-             <Carousel>
-             <Carousel.Item>
+            
     
-          <img className="landing_section" width="100%" height="auto" alt="Cidade de São Paulo" src={require("assets/img/theme/back_11.jpg")}  />
-
-              </Carousel.Item>
-              <Carousel.Item>
-
-              <img className="landing_section" width="100%" height="auto" alt="Cidade de São Paulo" src={require("assets/img/theme/back_22_.png")}  />
+          <img className="landing_section" width="100%"  alt="Cidade de São Paulo" src={require("assets/img/theme/back_11.jpg")}  />
              
-              </Carousel.Item>
-              </Carousel>
+             
             </section>
             </div>
          
-          <section className="section bg-second-1" id="QuemSomos">
+          <section className="section bg-second-1" id="/QuemSomos">
             <Container>
               <Row className="row-grid justify-content-lg-center">
                 <div className="text-center">
@@ -196,12 +189,12 @@ class Landing extends React.Component {
               </Row>
                 <Container>
                   <Row className="justify-content-md-center">
-                 <Col lg="6">
+                 <Col lg="4">
                  
                  
                   <AirbnbAd code='21577485'/>
                 </Col> 
-                <Col lg="6"><AirbnbAd code='21577485'/>
+                <Col lg="4"><AirbnbAd code='21577485'/>
               </Col>
               
               </Row>
@@ -210,14 +203,14 @@ class Landing extends React.Component {
         
 
           <section id="Mídia"> 
-            <Container>
                
               <Row className="text-center justify-content-center">
-                <Col lg="10">
+                <Col lg="10"><br></br>
                   <h2 className="font-weight-light">Hostt na mídia</h2>
                 </Col>
               </Row>
 
+              <Container>
               <Row className="justify-content-center">
               <Col md="4">
               <a href="https://economia.estadao.com.br/blogs/radar-imobiliario/locacao-por-aplicativo-leva-condominios-a-se-ajustarem/">

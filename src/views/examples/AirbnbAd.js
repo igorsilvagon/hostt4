@@ -15,7 +15,7 @@ export default class AirbnbAd extends Component {
         const url = "https://www.airbnb.com.br/rooms/" + this.props.code //+ "?s=51"
         return (
             <div style={{display: 'inline-block', textAlign: "center"}}>
-                <div className="airbnb-embed-frame" data-id={this.props.code} data-view="home" style={{width:'450px', height:'450px', margin:'auto'}}>
+                <div className="airbnb-embed-frame" data-id={this.props.code} data-view="home" style={{width:'450px', height:'450px', margin:'15px'}}>
                     <a href={url}>
                         <span>Ver no Airbnb</span>
                     </a>
