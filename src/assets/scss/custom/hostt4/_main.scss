@@ -30,3 +30,9 @@
     display: flex;
   }
 }
+
+.navbar-transparent .navbar-nav .nav-link {
+  > a {
+    color: #4c4c4c;
+  }
+}
