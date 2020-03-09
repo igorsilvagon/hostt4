@@ -153,28 +153,72 @@ class Landing extends React.Component {
 
           <section className="section bg-primar-1 white" id="NossosServicos">
             <Container>
-
+              
               <Row className="text-center justify-content-center">
                 <Col lg="10">
+                
+          
                   <h2 className="font-weight-light">Serviços</h2>
+             
+             
                 </Col>
               </Row>
-              <Row className="row-grid mt-5 justify-content-center ">
+              
+              <Row className="row-grid mt-5 justify-content-center">
+                 <Col lg="8">
+                  <br></br>
+                  <Row className="row-grid justify-content-center">
+                  <div className="icon justify-content-center">
+                    <img className="icon2" alt="1" src={require("assets/img/icons/common/icon2_01.jpg")} width="220%"/>
+                  </div>  
+                </Row>
+
+                </Col>
+                </Row>
+                <Row className="row-grid mt-5 justify-content-center ">
                 <Col lg="8">
-                  <br></br><br></br>
+
                   <h5 className="text-center"><b>Gestão de imóveis na plataforma Airbnb</b></h5>
                   <p className="text-center">Da criação do anúncio à limpeza do imóvel, passando pela comunicação com interessados e hóspedes até a entrega das chaves e acompanhamento da estadia, cuidamos de tudo que envolve disponibilizar seu apartamento na plataforma de locação</p>
+                  </Col>
+                  </Row>
+                  <Row className="row-grid mt-5 justify-content-center ">
+                  <Col lg="8">
+                  <br></br>
+
+                  <Row className="row-grid justify-content-center">
+                  <div className="icon justify-content-center">
+                    <img className="icon2" alt="1" src={require("assets/img/icons/common/icon2-03.jpg")} width="220%"/>
+                  </div>  
+                </Row>
+
                 </Col>
+                </Row>
+                <Row className="row-grid mt-5 justify-content-center ">
                 <Col lg="8">
-                  <br></br><br></br>
+
                   <h5 className="text-center"><b>Mobília</b></h5>
                   <p className="text-center">Tem um apartamento que não está mobiliado? Fale conosco – podemos mobilia-lo pra você</p>
+                  </Col>
+                  </Row>
+                  <Row className="row-grid mt-5 justify-content-center ">
+                  <Col lg="8">
+                 <br></br>
+
+                  <Row className="row-grid justify-content-center">
+                  <div className="icon justify-content-center">
+                    <img className="icon2" alt="1" src={require("assets/img/icons/common/icon2-02.jpg")} width="220%"/>
+                  </div>  
+                </Row>
                 </Col>
+                </Row>
+                <Row className="row-grid mt-5 justify-content-center ">
                 <Col lg="8">
-                  <br></br><br></br>
                   <h5 className="text-center"><b>Avaliação de imóveis</b></h5>
                   <p className="text-center">Na dúvida se o seu imóvel está pronto para fazer parte do catálogo da Hostt? Fazemos essa avaliação e oferecemos recomendações para deixar seu espaço mais atraente para usuários do Airbnb</p>
-                </Col>
+                  </Col>
+               
+                  
 
               </Row>
             </Container>

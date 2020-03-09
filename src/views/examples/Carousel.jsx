@@ -10,7 +10,7 @@ const TIMING = 6000;
 const baseSettings = {
   infinite: true,
   autoplay: true,
-  speed: TIMING,
+  speed: 800,
   autoplaySpeed: TIMING,
   slidesToShow: 1,
   slidesToScroll: 1
