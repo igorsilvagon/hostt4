@@ -38,7 +38,9 @@ import {
   // UncontrolledTooltip
 } from "reactstrap";
 
+
 import { SmoothScrollLink } from './SmoothScrollLink.jsx';
+
 
 class DemoNavbar extends React.Component {
   componentDidMount() {
@@ -59,7 +61,7 @@ class DemoNavbar extends React.Component {
              <img
                   alt="..."
                   src={require("assets/img/brand/Branding-Hostt-Alternativo.png")}
-                />
+                /> 
               </NavbarBrand> */}
               <button className="navbar-toggler" id="navbar_global">
                 <span className="navbar-toggler-icon" />
@@ -86,23 +88,31 @@ class DemoNavbar extends React.Component {
                 <Nav className="navbar-nav-hover" navbar>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
-                      <SmoothScrollLink to="QuemSomos">Quem somos</SmoothScrollLink>
+                    <SmoothScrollLink to="QuemSomos">Quem somos</SmoothScrollLink>
+                    </DropdownToggle>
+
+                  </UncontrolledDropdown>
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle nav>
+                    <SmoothScrollLink to="OQueFazemos">O que fazemos</SmoothScrollLink>
                     </DropdownToggle>
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
-                      <SmoothScrollLink to="OQueFazemos">O que fazemos</SmoothScrollLink>
+                    <SmoothScrollLink to="NossosServicos">Serviços</SmoothScrollLink>
                     </DropdownToggle>
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
-                      <SmoothScrollLink to="NossosServicos">Serviços</SmoothScrollLink>
+                    <SmoothScrollLink to="Imoveis">Imóveis gerenciados pela Hostt</SmoothScrollLink>
                     </DropdownToggle>
+
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
-                      <SmoothScrollLink to="Imoveis">Imóveis gerenciados pela Hostt</SmoothScrollLink>
+                    <SmoothScrollLink to="Midia">Hostt na mídia</SmoothScrollLink>
                     </DropdownToggle>
+
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
@@ -110,14 +120,8 @@ class DemoNavbar extends React.Component {
                     </DropdownToggle>
 
                   </UncontrolledDropdown>
-                  <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
-                      <SmoothScrollLink to="Midia">Hostt na mídia</SmoothScrollLink>
-                    </DropdownToggle>
-
-                  </UncontrolledDropdown>
                 </Nav>
-
+                
                 {/* <Nav className="align-items-lg-center ml-lg-auto" navbar>
                   <NavItem>
                     <NavLink

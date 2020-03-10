@@ -35,18 +35,32 @@ class SimpleFooter extends React.Component {
       <>
         <footer className=" footer" id="Contato">
           <Container>
-            <Row className=" row-grid align-items-center mb-5">
+            <Row>
               <Col lg="6">
-                <h3 className=" text-primary font-weight-light mb-2">
+                <h4 className="font-weight-light mb-2">Você é proprietário e tem interesse em nossos serviços?</h4>
+                <button className="btn btn-primary text-3">Cadastre o seu Imóvel</button>
+                </Col>
+                <Col lg="6">
+                <h4 className="font-weight-light mb-2">
                   Entre com contato conosco
-                </h3><br></br>
-                <h4 className=" mb-0 font-weight-light">
+                </h4><br></br>
+                <h5 className="text-primary mb-0 font-weight-light">
                   hostt@hostt.com.br
-                </h4>
+                </h5>
                 <br></br>
-                <h4 className=" mb-0 font-weight-light">(11) 9 9245-8043</h4>
-              </Col>
+                <h5 className="text-primary mb-0 font-weight-light">(11) 9 9245-8043</h5>
+            <br></br>
 
+                <i class="fa fa-facebook-square icon-2"></i>
+           
+         
+                <i class="fa fa-twitter icon-2"></i>
+          
+                <i class="fa fa-instagram icon-2"></i>
+  
+             
+              </Col>
+              
                {/*  <UncontrolledTooltip delay={0} target="tooltip383967593">
                   Like us
                 </UncontrolledTooltip>
@@ -76,10 +90,10 @@ class SimpleFooter extends React.Component {
                 <UncontrolledTooltip delay={0} target="tooltip626177562">
                   Star on Github
                 </UncontrolledTooltip> */}
-
+            
             </Row>
             <hr />
-
+            
           </Container>
         </footer>
       </>

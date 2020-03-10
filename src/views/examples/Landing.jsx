@@ -73,16 +73,25 @@ class Landing extends React.Component {
             </Carousel>
           </div>
 
-          <section className="section bg-second-1" id="QuemSomos">
+          <section className="section bg-second-1 back-3" id="QuemSomos">
             <Container>
               <Row className="row-grid justify-content-lg-center">
                 <div className="text-center">
                   <h2 className="font-weight-light">Quem somos</h2>
-                  <p >Somos anfitriões experientes que perceberam que o aluguel para curta temporada é uma forma atrativa de fazer um imóvel render mais. Plataformas como o Airbnb permitem gerenciar esse processo de forma simples e segura, mas receber bem vai além do que a plataforma oferece. É aí que nós entramos: cuidamos de tudo – do anúncio à limpeza, passando pela recepção dos hópedes – para que oferecer seu imóvel para locações de curta temporada seja como tem que ser: simples.</p>
+                  <p >A Hostt surgiu em 2020 quando um dos nossos
+fundadores, um Superhost no Airbnb, percebeu
+que a demanda por aluguéis de curta temporada
+estava crescendo nas grandes cidades.
+Notamos que muitos proprietários tem interesse
+nesse tipo de locação , porém não possuem
+tempo para administrar.
+É aí que entramos com nosso trabalho,
+oferecendo serviços e estratégias diferenciadas
+que visam potencializar o rendimento dos bens.</p>
                 </div>
 
 
-                <video controls>
+                <video controls poster={require("assets/video/tela_in.png")}>
                   <source src={require("assets/video/t_video4974277813369569446.mp4")} type="video/mp4"></source>
                 </video>
 
@@ -151,7 +160,7 @@ class Landing extends React.Component {
             </Container>
           </section>
 
-          <section className="section bg-primar-1 white" id="NossosServicos">
+          <section className="section bg-primar-1 back-3" id="NossosServicos">
             <Container>
               
               <Row className="text-center justify-content-center">
@@ -169,7 +178,7 @@ class Landing extends React.Component {
                   <br></br>
                   <Row className="row-grid justify-content-center">
                   <div className="icon justify-content-center">
-                    <img className="icon2" alt="1" src={require("assets/img/icons/common/icon2_01.jpg")} width="220%"/>
+                    <img className="icon2" alt="1" src={require("assets/img/icons/common/icon2-01.png")} width="220%"/>
                   </div>  
                 </Row>
 
@@ -188,7 +197,7 @@ class Landing extends React.Component {
 
                   <Row className="row-grid justify-content-center">
                   <div className="icon justify-content-center">
-                    <img className="icon2" alt="1" src={require("assets/img/icons/common/icon2-03.jpg")} width="220%"/>
+                    <img className="icon2" alt="1" src={require("assets/img/icons/common/icon2-03.png")} width="220%"/>
                   </div>  
                 </Row>
 
@@ -207,7 +216,7 @@ class Landing extends React.Component {
 
                   <Row className="row-grid justify-content-center">
                   <div className="icon justify-content-center">
-                    <img className="icon2" alt="1" src={require("assets/img/icons/common/icon2-02.jpg")} width="220%"/>
+                    <img className="icon2" alt="1" src={require("assets/img/icons/common/icon2-02.png")} width="220%"/>
                   </div>  
                 </Row>
                 </Col>
@@ -228,6 +237,7 @@ class Landing extends React.Component {
           <section className="bg-second-1" id="Imoveis">
             <Row className="text-center justify-content-center">
               <Col lg="10">
+                <br></br>
                 <h2 className="font-weight-light">Imóveis gerenciados pela Hostt</h2>
               </Col>
             </Row>
@@ -237,7 +247,7 @@ class Landing extends React.Component {
           </section>
 
 
-          <section id="Midia">
+          <section id="Mídia">
 
             <Row className="text-center justify-content-center">
               <Col lg="10"><br></br>
@@ -260,8 +270,9 @@ class Landing extends React.Component {
                         <h4 className="font-weight-light">
                           Estadão
                         </h4>
+                        <hr></hr>
                         <p className="text-italic">
-                          Locacao por aplicativo leva condominios a se ajustarem
+                          Locação por aplicativo leva condomínios a se ajustarem
                         </p>
                       </blockquote>
                     </Card>
