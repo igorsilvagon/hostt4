@@ -78,6 +78,7 @@ class Landing extends React.Component {
               <Row className="row-grid justify-content-lg-center">
                 <div className="text-center">
                   <h2 className="font-weight-light">Quem somos</h2>
+                  <br></br>
                   <p >A Hostt surgiu em 2020 quando um dos nossos
 fundadores, um Superhost no Airbnb, percebeu
 que a demanda por aluguéis de curta temporada
@@ -88,6 +89,7 @@ tempo para administrar.
 É aí que entramos com nosso trabalho,
 oferecendo serviços e estratégias diferenciadas
 que visam potencializar o rendimento dos bens.</p>
+<br></br>
                 </div>
 
 
@@ -242,6 +244,10 @@ que visam potencializar o rendimento dos bens.</p>
               </Col>
             </Row>
             <Container>
+              <Row>
+                <br></br>
+              <p>Atualmente a Hostt possui sob sua gestão mais de 20 apartamentos nos principais bairros de São Paulo, garantindo um excelente nível de serviço aos proprietários, gerando rentabilidade maior que o aluguel tradicional e sem qualquer dor de cabeça e burocracia. A satisfação dos hóspedes também é evidenciada conforme nossas centenas de avaliações e comentários positivos nas plataformas de anúncio.</p>
+              </Row>
               <AirbnbAds codes={['21577485', '21577485', '21577485']}/>
             </Container>
           </section>
@@ -267,9 +273,9 @@ que visam potencializar o rendimento dos bens.</p>
                       />
                       <blockquote className="card-blockquote">
 
-                        <h4 className="font-weight-light">
-                          Estadão
-                        </h4>
+                        <h5 className="font-weight-light">
+                          Conheça o Hostt
+                        </h5>
                         <hr></hr>
                         <p className="text-italic">
                           Locação por aplicativo leva condomínios a se ajustarem
